@@ -78,7 +78,7 @@ async function captureLatestPdfForDevice(updateState: string) {
 
   console.log("browser page opened");
   const base64Logo = await imageUrlToBase64(
-    `${serverUrl}/leanstack-main-logo.png`
+    "https://4u651ly4qn.ufs.sh/f/MU2Krr5SfEZtLblTWERXPQDNuCX4l5I9ZhrAx6BqVwgUdySJ"
   );
 
   const pdf = await page.pdf({
