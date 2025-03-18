@@ -35,7 +35,7 @@ const chromiumPack =
 const localChromePath =
   "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome";
 
-export async function captureLatestPdfForDevice(updateState: string) {
+async function captureLatestPdfForDevice(updateState: string) {
   const browser = await puppeteer.launch({
     args: isDev
       ? [
