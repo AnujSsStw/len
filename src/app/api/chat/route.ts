@@ -13,6 +13,7 @@ export async function POST(req: Request) {
     messages,
     tools: { TOOL },
     system: SYSPROMPT,
+    prompt: "Start asking questions from Section 1.",
   });
 
   return result.toDataStreamResponse();
